@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript"  src="js/jquery-3.5.1.js"></script>
+		<script type="text/javascript">
+			function clickon(){
+				
+				//因为id中只有一个属性
+				var a =$("#a1").val();
+				//使用js获取dom对象.value值 
+				var b =  document.getElementById("a1").value;
+				
+				//使用jQuery对象，通过get[i] 和 [i] 获取dom对象
+				var obj = $("#a1").get[0];
+				var obj2 = $("#a1")[0];
+
+
+				alert(a*a);
+				
+				//obj.value = b*b ;
+				$("#a1").val(a*a);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="平方"  onclick="clickon()"/>
+		<input id="a1" type="text" value="">
+	</body>
+</html>
